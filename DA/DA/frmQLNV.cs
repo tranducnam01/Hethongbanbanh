@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace DA
 {
@@ -18,33 +19,25 @@ namespace DA
         }
 
         KetNoi kn = new KetNoi();
-        
+
         private void frmQLNV_Load(object sender, EventArgs e)
         {
             getData();
-            getTenDangNhap();
         }
-        public void getTenDangNhap()
-        {
-            string query = "select * from TaiKhoan";
-            DataTable tb = kn.LayDuLieu(query);
-            cmbTenDangNhap.DataSource = tb;
-            cmbTenDangNhap.DisplayMember = "TenDangNhap";
-            cmbTenDangNhap.ValueMember = "TenDangNhap";
-        }
+
         public void getData()
         {
             string query = "select * from NhanVien";
             DataTable tb = kn.LayDuLieu(query);
             dgvNhanVien.DataSource = tb;
         }
-        private void btnLamMoi_Click(object sender, EventArgs e)
-        {
-            getData();
-            clearText();
-        }
         public void clearText()
         {
+            txtMaNhanVien.Enabled = true;
+            btnThem.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+
             txtMaNhanVien.Text = "";
             txtTenNhanVien.Text = "";
             txtGioiTinh.Text = "";
@@ -52,96 +45,101 @@ namespace DA
             txtSoDienThoai.Text = "";
             txtDiaChi.Text = "";
             txtEmail.Text = "";
-            cmbTenDangNhap.Text = "";
         }
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            getData();
+            clearText();
+        }
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             string query = string.Format(
-                //"select * from NhanVien inner join TaiKhoan on NhanVien.TenDangNhap = TaiKhoan.TenDangNhap where MaNhanVien = N'{0}' or TenNhanVien = N'{0}' or GioiTinh = N'{0}' or NgaySinh = '{0}' or SoDienThoai = '{0}' or DiaChi = N'{0}' or Email = N'{0}'",
-                //"select * from NhanVien inner join TaiKhoan on NhanVien.TenDangNhap = TaiKhoan.TenDangNhap where TaiKhoan.TenDangNhap like N'%{0}%'",
-                "select * from NhanVien inner join TaiKhoan on NhanVien.TenDangNhap = TaiKhoan.TenDangNhap where TaiKhoan.TenDangNhap = N'{0}'",
+                  "select * from nhanvien where MaNhanVien = N'{0}' or TenNhanVien = N'{0}'",
                 txtTimKiem.Text
             );
             DataTable tb = kn.LayDuLieu(query);
             dgvNhanVien.DataSource = tb;
         }
         private void btnThem_Click(object sender, EventArgs e)
-        {
-            string query = string.Format(
-                "insert into NhanVien values (N'{0}', N'{1}', N'{2}', '{3}', N'4', N'5', N'6', N'7')",
-                txtMaNhanVien.Text,
-                txtTenNhanVien.Text,
-                txtGioiTinh.Text,
-                dtpNgaySinh.Text,
-                txtSoDienThoai.Text,
-                txtDiaChi.Text,
-                txtEmail.Text,
-                cmbTenDangNhap.Text
-            );
-            bool kt = kn.ThucThi(query);
-            if (kt)
-            {
-                MessageBox.Show("Them moi thanh cong!");
-                btnLamMoi.PerformClick();
+        {   
+                string query = string.Format(
+                    "insert into nhanvien  values (N'{0}', N'{1}', N'{2}', '{3}', N'{4}', N'{5}', N'{6}')",
+                    txtMaNhanVien.Text,
+                    txtTenNhanVien.Text,
+                    txtGioiTinh.Text,
+                    dtpNgaySinh.Text,
+                    txtSoDienThoai.Text,
+                    txtDiaChi.Text,
+                    txtEmail.Text
+                );
+               
+                bool kt = kn.ThucThi(query);
+                if (kt)
+                {
+                    MessageBox.Show("Thêm mới thành công!");
+                    btnLamMoi.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm mới thất bại! Không rõ nguyên nhân.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
-            {
-                MessageBox.Show("Them moi that bai!");
-            }
-        }
-
         private void btnSua_Click(object sender, EventArgs e)
         {
             string query = string.Format(
-                "update NhanVien set MaNhanVien = N'{0}', TenNhanVien = N'{1}', GioiTinh = N'{2}', NgaySinh = '{3}', SoDienThoai = N'4', DiaChi = N'5', Email = N'6', TenDangNhap = N'7')",
+                "update nhanvien set TenNhanVien = N'{1}', NgaySinh = '{2}', GioiTinh = N'{3}', DiaChi = N'{4}', SoDienThoai = N'{5}', Email = N'{6}' where MaNhanVien = N'{0}'",
                 txtMaNhanVien.Text,
                 txtTenNhanVien.Text,
-                txtGioiTinh.Text,
                 dtpNgaySinh.Text,
-                txtSoDienThoai.Text,
+                txtGioiTinh.Text,
                 txtDiaChi.Text,
-                txtEmail.Text,
-                cmbTenDangNhap.Text
+                txtSoDienThoai.Text,
+                txtEmail.Text
             );
             bool kt = kn.ThucThi(query);
             if (kt)
             {
-                MessageBox.Show("Sua thanh cong!");
+                MessageBox.Show("Sửa thành công!");
                 btnLamMoi.PerformClick();
             }
             else
             {
-                MessageBox.Show("Sua that bai!");
+                MessageBox.Show("Sửa thất bại!");
             }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string query = string.Format(
-                "delete from NhanVien where MaNhanVien = N'{0}'",
+                "delete from nhanvien where MaNhanVien = N'{0}'",
                 txtMaNhanVien.Text,
                 txtTenNhanVien.Text,
-                txtGioiTinh.Text,
                 dtpNgaySinh.Text,
-                txtSoDienThoai.Text,
+                txtGioiTinh.Text,
                 txtDiaChi.Text,
-                txtEmail.Text,
-                cmbTenDangNhap.Text
+                txtSoDienThoai.Text,
+                txtEmail.Text
             );
             bool kt = kn.ThucThi(query);
             if (kt)
             {
-                MessageBox.Show("Xoa thanh cong!");
+                MessageBox.Show("Xóa thành công!");
                 btnLamMoi.PerformClick();
             }
             else
             {
-                MessageBox.Show("Xoa that bai!");
+                MessageBox.Show("Xóa thất bại!");
             }
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            txtMaNhanVien.Enabled = false;
+            btnThem.Enabled = false;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+
             int r = e.RowIndex;
             if (r >= 0)
             {
@@ -152,8 +150,12 @@ namespace DA
                 txtSoDienThoai.Text = dgvNhanVien.Rows[r].Cells["SoDienThoai"].Value.ToString();
                 txtDiaChi.Text = dgvNhanVien.Rows[r].Cells["DiaChi"].Value.ToString();
                 txtEmail.Text = dgvNhanVien.Rows[r].Cells["Email"].Value.ToString();
-                cmbTenDangNhap.Text = dgvNhanVien.Rows[r].Cells["TenDangNhap"].Value.ToString();
             }
+        }
+
+        private void dtpNgaySinh_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

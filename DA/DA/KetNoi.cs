@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Windows.Forms;
 
 namespace DA
 {
     internal class KetNoi
     {
-        private string conStr = "Data Source=DESKTOP-HA0KK9P;Initial Catalog=QLBanHang;Integrated Security=True";
+        private string conStr = @"Data Source=NAM;Initial Catalog=QLBBN;Persist Security Info=True;User ID=sa;Password=123456789;Encrypt=False;";
+
+   //     private string conStr = "Data Source=NAM;Initial Catalog=QLBBN;Persist Security Info=True;User ID=sa;Password=123456789;Encrypt=True;Trust Server Certificate=True";
         private SqlConnection conn;
 
         public KetNoi()
@@ -35,8 +38,11 @@ namespace DA
                 conn.Close();
                 return r > 0;
             }
-            catch
+            catch (Exception ex)
             {
+                // Ghi log lỗi để kiểm tra
+                MessageBox.Show($"Lỗi khi thực thi câu lệnh: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                conn.Close();
                 return false;
             }
         }

@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|c:\\users\\laptop\\onedrive\\desktop\\da.net\\da\\da\\frmhethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|solutionrelative:da\\frmhethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\da\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|solutionrelative:da\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\da\\frmhethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|solutionrelative:da\\frmhethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\da\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|solutionrelative:da\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\da\\frmqlk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|solutionrelative:da\\frmqlk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\da\\frmqlk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E38E733-1E33-4AAA-860C-5B75B9F7BEEE}|DA\\DA.csproj|solutionrelative:da\\frmqlk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmQLK.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmQLK.cs",
+              "RelativeDocumentMoniker": "DA\\frmQLK.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmQLK.cs",
+              "RelativeToolTip": "DA\\frmQLK.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAAIoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T17:27:29.754Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmQLK.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmQLK.cs",
+              "RelativeDocumentMoniker": "DA\\frmQLK.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmQLK.cs [Design]",
+              "RelativeToolTip": "DA\\frmQLK.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:31:32.021Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmHeThong.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmHeThong.cs",
+              "RelativeDocumentMoniker": "DA\\frmHeThong.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmHeThong.cs",
+              "RelativeToolTip": "DA\\frmHeThong.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAFcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:50:25.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmHeThong.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmHeThong.cs",
+              "RelativeDocumentMoniker": "DA\\frmHeThong.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmHeThong.cs [Design]",
+              "RelativeToolTip": "DA\\frmHeThong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:49:44.981Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmNhanVien.cs",
+              "RelativeDocumentMoniker": "DA\\frmNhanVien.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmNhanVien.cs",
+              "RelativeToolTip": "DA\\frmNhanVien.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwEEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T11:21:26.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmNhanVien.cs",
+              "RelativeDocumentMoniker": "DA\\frmNhanVien.cs",
+              "ToolTip": "C:\\Users\\LAPTOP\\OneDrive\\Desktop\\DA.net\\DA\\DA\\frmNhanVien.cs [Design]",
+              "RelativeToolTip": "DA\\frmNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T11:20:47.486Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
