@@ -32,6 +32,13 @@ Mục đích của dự án là quản lý cửa hàng bán bánh: quản lý s�
 git clone https://github.com/tranducnam01/Hethongbanbanh.git
 cd Hethongbanbanh
 ```
+# Nếu có script DB
+```bash
+sqlcmd –S . –i QLBanHang.sql
+dotnet restore
+dotnet build
+dotnet run
+```
 2. Tạo Database từ SQL Server dựa vào Diagram
 <img width="1129" height="703" alt="image" src="https://github.com/user-attachments/assets/2b95ddcc-7528-4bc2-b4cf-529f669474a3" />
 3. Cấu hình chuỗi kết nối
@@ -44,6 +51,7 @@ Mở file App.config trong project, chỉnh lại phần connectionStrings cho p
            providerName="System.Data.SqlClient" />
     </connectionStrings>
 ```
+
 
 
 
