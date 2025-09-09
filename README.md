@@ -4,6 +4,7 @@
 **Giao diện đăng nhập**  
 <img width="702" height="487" alt="image" src="https://github.com/user-attachments/assets/3dacae80-1d66-4952-86ca-e444eaa0254f" />
 
+---
 
 **Giao diện trang chủ**  
 <img width="756" height="470" alt="image" src="https://github.com/user-attachments/assets/517f2ab7-a197-40f5-b881-4a886291dac5" />
@@ -41,6 +42,7 @@ Mở file App.config trong project, chỉnh lại phần connectionStrings cho p
            connectionString="Data Source=.;Initial Catalog=QLBanHang;Integrated Security=True" 
            providerName="System.Data.SqlClient" />
     </connectionStrings>
+
 
 
 
