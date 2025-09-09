@@ -1,4 +1,4 @@
-# Hệ Thống Bán Bánh
+<img width="702" height="487" alt="image" src="https://github.com/user-attachments/assets/71132329-409e-4b2f-b51d-e7ab308592ed" /># Hệ Thống Bán Bánh
 
 ## 📌 Giới thiệu
 Đây là ứng dụng **desktop** được xây dựng bằng **C# Windows Forms**.  
@@ -36,6 +36,7 @@ Mở file App.config trong project, chỉnh lại phần connectionStrings cho p
 
 **Giao diện trang chủ**
 <img width="702" height="487" alt="image" src="https://github.com/user-attachments/assets/c7cb6349-1cb1-4b6b-b5ab-1a2bd5df0ddd" />
+
 
 
 
