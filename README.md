@@ -1,5 +1,13 @@
 # Hệ Thống Bán Bánh
+📸 Hình minh họa sau khi chạy code  
 
+**Giao diện đăng nhập**  
+<img width="702" height="487" alt="image" src="https://github.com/user-attachments/assets/340604d1-06a0-4c6f-9662-c3c21c7e9fd7" />
+
+**Giao diện trang chủ**  
+<img width="756" height="470" alt="image" src="https://github.com/user-attachments/assets/517f2ab7-a197-40f5-b881-4a886291dac5" />
+
+---
 ## 📌 Giới thiệu
 Đây là ứng dụng **desktop** được xây dựng bằng **C# Windows Forms**.  
 Mục đích của dự án là quản lý cửa hàng bán bánh: quản lý sản phẩm, khách hàng, đơn hàng, thống kê,...
@@ -15,15 +23,7 @@ Mục đích của dự án là quản lý cửa hàng bán bánh: quản lý s�
 
 ## 🚀 Hướng dẫn cài đặt & chạy
 
-📸 Hình minh họa sau khi chạy code  
 
-**Giao diện đăng nhập**  
-<img width="702" height="487" alt="image" src="https://github.com/user-attachments/assets/340604d1-06a0-4c6f-9662-c3c21c7e9fd7" />
-
-**Giao diện trang chủ**  
-<img width="756" height="470" alt="image" src="https://github.com/user-attachments/assets/517f2ab7-a197-40f5-b881-4a886291dac5" />
-
----
 
 ### 1. Clone project từ GitHub
 ```bash
@@ -40,6 +40,7 @@ Mở file App.config trong project, chỉnh lại phần connectionStrings cho p
            connectionString="Data Source=.;Initial Catalog=QLBanHang;Integrated Security=True" 
            providerName="System.Data.SqlClient" />
     </connectionStrings>
+
 
 
 
