@@ -37,11 +37,14 @@ cd Hethongbanbanh
 3. Cấu hình chuỗi kết nối
 
 Mở file App.config trong project, chỉnh lại phần connectionStrings cho phù hợp với SQL Server trên máy.
+```bash
     <connectionStrings>
       <add name="QLBanHangConnection"
            connectionString="Data Source=.;Initial Catalog=QLBanHang;Integrated Security=True" 
            providerName="System.Data.SqlClient" />
     </connectionStrings>
+```
+
 
 
 
